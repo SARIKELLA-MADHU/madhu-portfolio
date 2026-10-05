@@ -97,4 +97,69 @@ export const projects = [
     featured: true,
     order: 2,
   },
+  {
+    title: 'Money Pool',
+    subtitle: 'Group Expense & Money Sharing Platform',
+    description:
+      'A MERN-based group expense management platform for managing shared finances across trips, families, parties and other groups.',
+    highlights: [
+      'JWT-based authentication, role-based permissions, circle creation, member management, contributions, fund allocation and transaction tracking.',
+      'Flexible expense settlement with automatic equal splitting and host-controlled manual allocation, supporting different contribution requirements within a group.',
+      'LLM-based spending analysis that categorizes transactions and generates productive/non-productive spending insights and periodic summaries.',
+    ],
+    techStack: ['MongoDB', 'Express', 'React', 'Node.js', 'JWT', 'LLM'],
+    githubUrl: '',
+    liveUrl: '',
+    featured: false,
+    order: 3,
+  },
+  {
+    title: 'Fake News Detection',
+    subtitle: 'Multimodal Detection with BERT & EfficientNet',
+    description:
+      'A multimodal fake news detection system that uses BERT for textual analysis and EfficientNet for image-based analysis.',
+    highlights: [
+      'Fine-tuned BERT to extract contextual features from news headlines/articles and EfficientNet to learn visual features from the associated images.',
+      'Combined textual and visual representations to improve classification of news content as real or fake.',
+      'Evaluated the model using accuracy, precision, recall and F1-score to measure classification performance.',
+    ],
+    techStack: ['BERT', 'EfficientNet', 'Python'],
+    githubUrl: '',
+    liveUrl: '',
+    featured: false,
+    order: 4,
+  },
+  {
+    title: 'Airbnb Booking Prediction',
+    subtitle: 'New User Booking Destination Prediction',
+    description:
+      'A machine learning classification pipeline that predicts the first booking destination of new Airbnb users from user profile and session activity data.',
+    highlights: [
+      'Data preprocessing, exploratory data analysis and feature engineering with Pandas, NumPy and PySpark to prepare behavioral and demographic features.',
+      'Trained and evaluated XGBoost for multi-class destination prediction, achieving approximately 87.5% accuracy.',
+      'Built Power BI dashboards to visualize user demographics, booking patterns, destination trends and model-related insights.',
+    ],
+    techStack: ['Python', 'Pandas', 'NumPy', 'PySpark', 'XGBoost', 'Power BI'],
+    githubUrl: '',
+    liveUrl: '',
+    featured: false,
+    order: 5,
+  },
+  {
+    title: 'Live Weather Monitoring & Alerts',
+    subtitle: 'Real-Time Streaming Alert System',
+    description:
+      'A real-time pipeline that streams live weather data and raises alerts when conditions cross specified limits: Weather API → Kafka → Flink → Alerts → Dashboard.',
+    highlights: [
+      'Monitors temperature, humidity, rainfall and wind speed from a live weather API.',
+      'Kafka handles the real-time data stream, and Flink processes the incoming data and checks it against thresholds.',
+      'Generates alerts when conditions cross the specified limits and surfaces them on a dashboard.',
+      'Planned extensions: multi-city streaming, windowed aggregations, anomaly and trend detection, database storage, notifications and checkpointing.',
+    ],
+    techStack: ['Kafka', 'Flink', 'Weather API'],
+    githubUrl: '',
+    liveUrl: '',
+    featured: false,
+    order: 6,
+  },
 ];
